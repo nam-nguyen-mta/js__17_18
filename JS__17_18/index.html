@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="header__ex">Bài tập nộp của Quang Nam</h1>
+    <section class="form__app">
+        <div class="top__form">
+            <div class="top__input">
+                <label>Bạn hãy nhập một dãy số bạn muốn tách biệt bằng dấu phẩy</label>
+                <input type="text" id="daySo">
+                <button id="submit">XÁC NHẬN</button>
+            </div>
+            <p>Dãy số mà bạn vừa nhập là: <span id="arr__span"></span></p>
+        </div>
+        <div class="row bot__form">
+            <div class="col-3 left__content">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <!-- 1 -->
+                    <button class="nav-link active" id="question__1" data-toggle="pill" data-target="#v-pills-home"
+                        type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Câu hỏi 1</button>
+                    <!-- 2 -->
+                    <button class="nav-link" id="question__2" data-toggle="pill" data-target="#v-pills-profile"
+                        type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Câu hỏi
+                        2</button>
+                    <!-- 3 -->
+                    <button class="nav-link" id="question__3" data-toggle="pill" data-target="#v-pills-messages"
+                        type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Câu hỏi
+                        3</button>
+                    <!-- 4 -->
+                    <button class="nav-link" id="question__4" data-toggle="pill" data-target="#question_4" type="button"
+                        role="tab" aria-controls="v-pills-settings" aria-selected="false">Câu hỏi
+                        4</button>
+                    <!-- 5 -->
+                    <button class="nav-link" id="question__5" data-toggle="pill" data-target="#question_5" type="button"
+                        role="tab" aria-controls="v-pills-settings" aria-selected="false">Câu hỏi
+                        5</button>
+                    <!-- 6 -->
+                    <button class="nav-link" id="question__6" data-toggle="pill" data-target="#question_6" type="button"
+                        role="tab" aria-controls="v-pills-settings" aria-selected="false">Câu hỏi
+                        6</button>
+                    <!-- 7 -->
+                    <button class="nav-link" id="question__7" data-toggle="pill" data-target="#question_7" type="button"
+                        role="tab" aria-controls="v-pills-settings" aria-selected="false">Câu hỏi
+                        7</button>
+                    <!-- 8 -->
+                    <button class="nav-link" id="question__8" data-toggle="pill" data-target="#question_8" type="button"
+                        role="tab" aria-controls="v-pills-settings" aria-selected="false">Câu hỏi
+                        8</button>
+                    <!-- 9 -->
+                    <button class="nav-link" id="question__9" data-toggle="pill" data-target="#question_9" type="button"
+                        role="tab" aria-controls="v-pills-settings" aria-selected="false">Câu hỏi
+                        9</button>
+                    <!-- 10 -->
+                    <button class="nav-link" id="question__10" data-toggle="pill" data-target="#question_10"
+                        type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Câu hỏi
+                        10</button>
+
+                </div>
+            </div>
+            <div class="col-9 right_content">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- 1 -->
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="question__1">
+                        <p>Tổng các số dương trong mảng.</p>
+                        <button class="btn__content" id="submit__1">bấm vào đây để thực hiện tính tổng</button>
+                        <p>Kết quả: Tổng các số dương trong mảng bạn nhập là: <br/> <span id="answer__1"></span></p>
+                    </div>
+                    <!-- 2 -->
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="question__2">
+                        <p>Số các số dương trong mảng.</p>
+                        <button class="btn__content" id="submit__2">bấm vào đây để thực hiện tìm</button>
+                        <p>Kết quả: Số các số dương trong mảng bạn nhập là: <br/> <span id="answer__2"></span></p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="question__3">
+                        <p>Tìm số nhỏ nhất trong mảng</p>
+                        <button class="btn__content" id="submit__3">bấm vào đây để thực hiện tìm</button>
+                        <p>Kết quả: Số nhỏ nhất trong mảng bạn nhập là: <br/> <span id="answer__3"></span></p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="tab-pane fade" id="question_4" role="tabpanel" aria-labelledby="question__4">
+                        <p>Tìm số dương nhỏ nhất trong mảng của bạn là</p>
+                        <button class="btn__content" id="submit__4">bấm vào đây để thực hiện tìm</button>
+                        <p>Kết quả: Số dương nhỏ nhất trong mảng bạn nhập là: <br/> <span id="answer__4"></span></p>
+                    </div>
+                    <!-- 5 -->
+                    <div class="tab-pane fade" id="question_5" role="tabpanel" aria-labelledby="question__5">
+                        <p>Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1.</p>
+                        <button class="btn__content" id="submit__5">bấm vào đây để thực hiện</button>
+                        <p>Kết quả: Số chẵn cuối cùng trong mảng là: <br/> <span id="answer__5"></span></p>
+                    </div>
+                    <!-- 6 -->
+                    <div class="tab-pane fade" id="question_6" role="tabpanel" aria-labelledby="question__6">
+                        <p>Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị).</p>
+                        <label for="daySo__6">Hãy nhập hai số có trong dãy số bạn nhập lúc ban đầu mà bạn muốn đổi vị trí chúng cho nhau, hãy tách biệt hai số này bằng dấu phẩy</label>
+                        <input type="text" id="daySo__6">
+                        <button class="btn__content" id="submit__6">bấm vào đây để thực hiện</button>
+                        <p>Kết quả: Mảng sau khi thực hiện đổi chỗ là: <br/> <span id="answer__6"></span></p>
+                    </div>
+                    <!-- 7 -->
+                    <div class="tab-pane fade" id="question_7" role="tabpanel" aria-labelledby="question__7">
+                        <p>Sắp xếp mảng theo thứ tự tăng dần.</p>
+                        <button class="btn__content" id="submit__7">bấm vào đây để thực hiện</button>
+                        <p>Kết quả: Mảng sau khi thực hiện đổi chỗ là: <br/> <span id="answer__7"></span></p> 
+                    </div>
+                    <!-- 8 -->
+                    <div class="tab-pane fade" id="question_8" role="tabpanel" aria-labelledby="question__8">
+                        <p>Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1.</p>
+                        <button class="btn__content" id="submit__8">bấm vào đây để thực hiện</button>
+                        <p>Kết quả: Số nguyên tố đầu tiên trong mảng là: <br/> <span id="answer__8"></span></p>
+                    </div>
+                    <!-- 9 -->
+                    <div class="tab-pane fade" id="question_9" role="tabpanel" aria-labelledby="question__9">
+                        <label for="input__9">Hãy nhập thêm một mảng những số thực (Lưu ý các số cách nhau bằng dấu phẩy)
+                        </label>
+                        <input type="text" id="daySo__9">
+                        <p>ĐỀ BÀI: Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?</p>
+                        <button class="btn__content" id="submit__9">bấm vào đây để thực hiện</button>
+                        <p>Kết quả: Số số nguyên trong mảng là: <br/> <span id="answer__9"></span></p>
+                    </div>
+                    <!-- 10 -->
+                    <div class="tab-pane fade" id="question_10" role="tabpanel" aria-labelledby="question__10">
+                        <p>So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn.</p>
+                        <button class="btn__content" id="submit__10">bấm vào đây để thực hiện</button>
+                        <p>Kết quả: Loại số (dương/âm) có số lượng lớn nhất trong mảng là: <br/> <span id="answer__10"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    
+    <script>
+        $('#myTab button').on('click', function (event) {
+            event.preventDefault()
+            $(this).tab('show')
+        })
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
